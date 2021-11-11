@@ -1,0 +1,770 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+
+## Dodanie żeńskiej końcówki -a lub męskiej -null
+defined_text = {
+	name = GetANoun
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+	}
+}
+
+## Dodanie żeńskiej końcówki -a lub męskiej -y
+defined_text = {
+	name = GetAY
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_y
+	}
+}
+
+## Dodanie żeńskiej końcówki -ą lub męskiej -ym
+defined_text = {
+	name = GetAYm
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_alm
+	}
+}
+
+## jej/jemu
+defined_text = {
+	name = GetHerHim_dat
+	random = no
+	text = {
+		localisation_key = string_end_jej
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_jemu
+	}
+}
+
+## nią/nim
+defined_text = {
+	name = GetHerHim_ins
+	random = no
+	text = {
+		localisation_key = string_end_nia
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_nim
+	}
+}
+
+## ęła/ął
+defined_text = {
+	name = GetEndPast
+	random = no
+	text = {
+		localisation_key = string_end_ala
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_alpl
+	}
+}
+
+## Odczedł/Odeszła
+defined_text = {
+	name = GetGone
+	random = no
+	text = {
+		localisation_key = string_word_odeszla
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_odszedl
+	}
+}
+
+## władca/władczyni
+defined_text = {
+	name = GetRul
+	random = no
+	text = {
+		localisation_key = string_word_wladczyni
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_wladca
+	}
+}
+
+## władcę/władczynię
+defined_text = {
+	name = GetRulAcc
+	random = no
+	text = {
+		localisation_key = string_word_wladczynie
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_wladce
+	}
+}
+
+## władczyni/władcy
+defined_text = {
+	name = GetRulGen
+	random = no
+	text = {
+		localisation_key = string_word_wladczynie
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_wladce
+	}
+}
+
+## ą/ego
+defined_text = {
+	name = GetAEgo
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_ego
+	}
+}
+
+## na/ien
+defined_text = {
+	name = GetNaIen
+	random = no
+	text = {
+		localisation_key = string_end_na
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_ien
+	}
+}
+
+## na/ien
+defined_text = {
+	name = GetDaughterSon_gen
+	random = no
+	text = {
+		localisation_key = string_word_corki
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_syna
+	}
+}
+
+## kobietą/mężczyzną
+defined_text = {
+	name = GetWomanMan_dat
+	random = no
+	text = {
+		localisation_key = string_word_woman_dat
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_word_man_dat
+	}
+}
+
+## ej/ego
+defined_text = {
+	name = GetEjEgo
+	random = no
+	text = {
+		localisation_key = string_end_ej
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_ego
+	}
+}
+
+## a/i
+defined_text = {
+	name = GetAI
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			is_female = yes
+		}
+	}
+	text = {
+		localisation_key = string_end_i
+	}
+}
+
+defined_text = {
+	name = GetAdv_Adm_ANoun
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_ANoun
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_ANoun
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Adm_AY
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_y
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_AY
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_y
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_AY
+	random = no
+	text = {
+		localisation_key = string_end_a
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_y
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#jemu/jej
+
+defined_text = {
+	name = GetAdv_Adm_HerHim_dat
+	random = no
+	text = {
+		localisation_key = string_end_jej
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_jemu
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_HerHim_dat
+	random = no
+	text = {
+		localisation_key = string_end_jej
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_jemu
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_HerHim_dat
+	random = no
+	text = {
+		localisation_key = string_end_jej
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_jemu
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#cz/-
+
+defined_text = {
+	name = GetAdv_Adm_CzNoun
+	random = no
+	text = {
+		localisation_key = string_end_cz
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_CzNoun
+	random = no
+	text = {
+		localisation_key = string_end_cz
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_CzNoun
+	random = no
+	text = {
+		localisation_key = string_end_cz
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#ą/iem
+
+defined_text = {
+	name = GetAdv_Adm_AIem
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_iem
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_AIem
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_iem
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_AIem
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_iem
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#ą/ego
+
+defined_text = {
+	name = GetAdv_Adm_AEgo
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_ego
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_AEgo
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_ego
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_AEgo
+	random = no
+	text = {
+		localisation_key = string_end_apl
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_ego
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#k/-
+
+defined_text = {
+	name = GetAdv_Adm_KNoun
+	random = no
+	text = {
+		localisation_key = string_end_k
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_KNoun
+	random = no
+	text = {
+		localisation_key = string_end_k
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_KNoun
+	random = no
+	text = {
+		localisation_key = string_end_k
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#nią/nim
+
+defined_text = {
+	name = GetAdv_Adm_HerHim_ins
+	random = no
+	text = {
+		localisation_key = string_end_nia
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_nim
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_HerHim_ins
+	random = no
+	text = {
+		localisation_key = string_end_nia
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_nim
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_HerHim_ins
+	random = no
+	text = {
+		localisation_key = string_end_nia
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_nim
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+#j/go
+
+defined_text = {
+	name = GetAdv_Adm_JGo
+	random = no
+	text = {
+		localisation_key = string_end_j
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_go
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Dip_JGo
+	random = no
+	text = {
+		localisation_key = string_end_j
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_go
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetAdv_Mil_JGo
+	random = no
+	text = {
+		localisation_key = string_end_j
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_go
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
+
+
+defined_text = {
+	name = GetAdv_Adm_KaNoun
+	random = no
+	text = {
+		localisation_key = string_end_ka
+		trigger = {
+			employed_advisor = { category = ADM is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = ADM is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetDip_Adm_KaNoun
+	random = no
+	text = {
+		localisation_key = string_end_ka
+		trigger = {
+			employed_advisor = { category = DIP is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = DIP is_male = yes }
+		}
+	}
+}
+
+defined_text = {
+	name = GetMil_Adm_KaNoun
+	random = no
+	text = {
+		localisation_key = string_end_ka
+		trigger = {
+			employed_advisor = { category = MIL is_female = yes }
+		}
+	}
+	text = {
+		localisation_key = string_end_empty
+		trigger = {
+			employed_advisor = { category = MIL is_male = yes }
+		}
+	}
+}
